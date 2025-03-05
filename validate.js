@@ -8,13 +8,13 @@ function checkSID() {
 }
 
 function checkCandiNo() {
-  let candi = (document.getElementById("candi").value).trim();
-  if (isNaN(candi) || candi < 1) {
-    return false;
-  } else {
-    return true;
+	let candi = (document.getElementById("candi").value).trim();
+	if (isNaN(candi) || candi < 1 || candi > 10) {
+	  return false;
+	} else {
+	  return true;
+	}
   }
-}
 
 function validateForm(){
 	if(!checkSID()){
